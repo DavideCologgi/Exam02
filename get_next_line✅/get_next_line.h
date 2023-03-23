@@ -6,7 +6,7 @@
 /*   By: dcologgi <dcologgi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/02 09:59:07 by dcologgi          #+#    #+#             */
-/*   Updated: 2023/03/02 15:57:35 by dcologgi         ###   ########.fr       */
+/*   Updated: 2023/03/23 10:49:22 by dcologgi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,9 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-int		ft_strlen(char *line);
-char	*ft_strdup(char *line);
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
 char	*get_next_line(int fd);
 
 #endif
